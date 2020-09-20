@@ -7,7 +7,7 @@ export default function Home(): JSX.Element {
   return (
     <div data-tid="container">
       <h2>Welcome.</h2>
-      <Link to={routes.BUY}>to Goals</Link>
+      <Link to={routes.BUY}>to Buy</Link>
     </div>
   );
 }
