@@ -8,6 +8,7 @@ export default function Home(): JSX.Element {
     <div className={styles.container} data-tid="container">
       <h2>Home</h2>
       <Link to={routes.COUNTER}>to Counter</Link>
+      <Link to={routes.BUY}>to Goals</Link>
     </div>
   );
 }
