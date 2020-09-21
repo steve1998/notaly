@@ -1,5 +1,16 @@
 /* styles for Home */
 
 .heading {
+  font-weight: 600;
+  font-size: 72px;
+}
+
+.subheading {
   font-weight: 300;
+  font-size: 24px;
+}
+
+.time {
+  font-weight: 500;
+  font-size: 24px;
 }
