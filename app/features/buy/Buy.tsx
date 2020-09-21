@@ -8,7 +8,7 @@ export default function Buy() {
       <div>
         <Sidebar />
       </div>
-      <div className="px-4 container-fluid">
+      <div className="p-4 container-fluid">
         <h1 className={styles.heading}>What to Buy</h1>
       </div>
     </div>

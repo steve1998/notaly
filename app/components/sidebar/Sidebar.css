@@ -2,14 +2,15 @@
 
 .sidebar {
   min-height: 100vh;
-  background-color: #7b9fcf;
-  padding: 1em 0;
-  width: 120px;
+  background-color: #1d3557;
+  padding: 1em 0.5em;
+  width: 150px;
   height: 100vh;
 }
 
 .text {
   padding: 0 1em;
+  font-weight: 600;
 }
 
 .text:hover {
@@ -29,8 +30,13 @@
 
 .linkDiv {
   padding: 0.5em 0;
+  border-radius: 10px;
 }
 
 .linkDiv:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.linkDiv:focus {
   background-color: rgba(0, 0, 0, 0.5);
 }
