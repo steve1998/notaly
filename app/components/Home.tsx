@@ -1,18 +1,16 @@
 import React from 'react';
-import { Row, Col } from 'reactstrap';
 import Sidebar from './sidebar/Sidebar';
+import styles from './Home.css';
 
 export default function Home(): JSX.Element {
   return (
-    <div data-tid="container">
-      <Row>
-        <Col md="2">
-          <Sidebar />
-        </Col>
-        <Col>
-          <h2>Welcome.</h2>
-        </Col>
-      </Row>
+    <div className="d-flex flex-row" data-tid="container">
+      <div>
+        <Sidebar />
+      </div>
+      <div className="px-4 container-fluid">
+        <h1 className={styles.heading}>Welcome.</h1>
+      </div>
     </div>
   );
 }

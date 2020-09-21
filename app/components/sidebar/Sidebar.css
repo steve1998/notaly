@@ -1,0 +1,36 @@
+/* styles for Sidebar */
+
+.sidebar {
+  min-height: 100vh;
+  background-color: #7b9fcf;
+  padding: 1em 0;
+  width: 120px;
+  height: 100vh;
+}
+
+.text {
+  padding: 0 1em;
+}
+
+.text:hover {
+  color: white;
+  opacity: 0.8;
+}
+
+.link {
+  color: white;
+  text-decoration: none !important;
+}
+
+.link:hover {
+  background-color: white;
+  opacity: 0.9;
+}
+
+.linkDiv {
+  padding: 0.25em 0;
+}
+
+.linkDiv:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
