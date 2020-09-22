@@ -38,6 +38,8 @@ app/renderer.prod.js
 app/renderer.prod.js.map
 app/style.css
 app/style.css.map
+app/Theme.css
+app/Theme.css.map
 dist
 dll
 main.js
