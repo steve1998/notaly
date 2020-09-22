@@ -13,7 +13,7 @@ const LazyCounterPage = React.lazy(() =>
 );
 
 const CounterPage = (props: Record<string, any>) => (
-  <React.Suspense fallback={<h1>Loading...</h1>}>
+  <React.Suspense fallback={<h1 style={{ padding: '1em' }}>Loading...</h1>}>
     <LazyCounterPage {...props} />
   </React.Suspense>
 );
@@ -23,7 +23,7 @@ const LazyBuyPage = React.lazy(() =>
 );
 
 const BuyPage = (props: Record<string, any>) => (
-  <React.Suspense fallback={<h1>Loading...</h1>}>
+  <React.Suspense fallback={<h1 style={{ padding: '1em' }}>Loading...</h1>}>
     <LazyBuyPage {...props} />
   </React.Suspense>
 );
