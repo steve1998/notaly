@@ -46,6 +46,7 @@ main.js
 main.js.map
 
 server/venv
+server/__pycache__
 
 .idea
 npm-debug.log.*
