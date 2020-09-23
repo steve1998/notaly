@@ -2,7 +2,7 @@
 
 .sidebar {
   min-height: 100vh;
-  background-color: #1d3557;
+  background-color: var(--primary);
   padding: 1em 0.5em;
   width: 150px;
   height: 100vh;

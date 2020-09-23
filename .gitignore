@@ -45,8 +45,11 @@ dll
 main.js
 main.js.map
 
+server/venv
+
 .idea
 npm-debug.log.*
 *.css.d.ts
 *.sass.d.ts
 *.scss.d.ts
+*.pyc
