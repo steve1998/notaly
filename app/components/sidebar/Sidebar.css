@@ -8,6 +8,13 @@
   height: 100vh;
 }
 
+.brand {
+  font-weight: 600;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+}
+
 .text {
   padding: 0 1em;
   font-weight: 600;

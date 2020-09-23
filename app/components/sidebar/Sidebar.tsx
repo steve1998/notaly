@@ -6,6 +6,9 @@ import routes from '../../constants/routes.json';
 export default function Sidebar() {
   return (
     <div className={styles.sidebar}>
+      <div>
+        <h1 className={styles.brand}>Notaly</h1>
+      </div>
       <div className={styles.linkDiv}>
         <Link className={styles.link} to={routes.HOME}>
           <div className={styles.text}>Home</div>
