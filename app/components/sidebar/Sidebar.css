@@ -1,6 +1,9 @@
 /* styles for Sidebar */
 
 .sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   min-height: 100vh;
   background-color: var(--primary);
   padding: 1em 0.5em;
@@ -20,9 +23,14 @@
   font-weight: 600;
 }
 
+.button {
+  background-color: white;
+  color: var(--primary);
+}
+
 .text:hover {
   color: white;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .link {
@@ -38,6 +46,7 @@
 .linkDiv {
   padding: 0.5em 0;
   border-radius: 10px;
+  transition: 0.15s ease-in-out;
 }
 
 .linkDiv:hover {
