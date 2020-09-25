@@ -76,6 +76,9 @@ const createWindow = async () => {
 
   mainWindow.loadURL(`file://${__dirname}/app.html`);
 
+  const storage = require('electron-json-storage');
+  console.log(storage.getDataPath());
+
   // @TODO: Use 'ready-to-show' event
   //        https://github.com/electron/electron/blob/master/docs/api/browser-window.md#using-ready-to-show-event
   mainWindow.webContents.on('did-finish-load', () => {
@@ -101,7 +104,7 @@ const createWindow = async () => {
 
   // Remove this if your app does not use auto updates
   // eslint-disable-next-line
-  new AppUpdater();
+  // new AppUpdater();
 };
 
 /**

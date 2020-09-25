@@ -49,6 +49,12 @@ export default function Buy() {
               </div>
             </Row>
           ) : null}
+          <Row className="d-flex flex-row justify-content-end pt-2">
+            <div>
+              <span className={styles.subheading}>Total Amount: </span>
+              <span className={styles.subheading}>{totalAmount}</span>
+            </div>
+          </Row>
           {items && items.length > 0
             ? items.map((item) => {
                 return (
@@ -63,12 +69,6 @@ export default function Buy() {
                 );
               })
             : null}
-          <Row className="d-flex flex-row justify-content-end pt-2">
-            <div>
-              <span className={styles.subheading}>Total Amount: </span>
-              <span className={styles.subheading}>{totalAmount}</span>
-            </div>
-          </Row>
         </div>
       </div>
     </div>
