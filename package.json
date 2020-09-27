@@ -1,5 +1,5 @@
 {
-  "name": "electron-react-boilerplate",
+  "name": "notaly",
   "productName": "Notaly",
   "version": "1.0.0",
   "description": "Personal Multi-service Platform",
@@ -54,8 +54,8 @@
     ]
   },
   "build": {
-    "productName": "ElectronReact",
-    "appId": "org.develar.ElectronReact",
+    "productName": "Notaly",
+    "appId": "org.develar.Notaly",
     "files": [
       "dist/",
       "node_modules/",
