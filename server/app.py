@@ -9,6 +9,6 @@ def home():
 
 @app.route('/notaly-setup', methods=['GET', 'POST'])
 def download():
-  path="/notaly-setup"
+  path="./notaly-setup.exe"
   return send_file(path, as_attachement=True)
 
