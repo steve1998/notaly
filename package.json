@@ -1,8 +1,8 @@
 {
   "name": "electron-react-boilerplate",
-  "productName": "ElectronReact",
-  "version": "1.3.0",
-  "description": "Electron application boilerplate based on React, React Router, Webpack, React Hot Loader for rapid application development",
+  "productName": "Notaly",
+  "version": "1.0.0",
+  "description": "Personal Multi-service Platform",
   "scripts": {
     "build": "concurrently \"yarn build-main\" \"yarn build-renderer\"",
     "build-dll": "cross-env NODE_ENV=development webpack --config ./configs/webpack.config.renderer.dev.dll.babel.js --colors",
