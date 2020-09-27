@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Row, Button, Input } from 'reactstrap';
+import { Row, Button, Input, Col } from 'reactstrap';
 import Sidebar from '../../components/sidebar/Sidebar';
 import {
   toggleIsAdd,
@@ -62,14 +62,14 @@ export default function Buy() {
             <Row className="d-flex flex-row justify-content-between pb-4">
               <div className="d-flex flex-row">
                 <Input
-                  id="description"
                   placeholder="Item to buy"
-                  className="mr-2"
+                  className="mr-2 input"
+                  type="text"
                   onChange={(event) => setDescriptionVal(event.target.value)}
                 />
                 <Input
-                  id="amount"
-                  placeholder="Amount"
+                  placeholder="Amount $"
+                  type="number"
                   onChange={(event) => {
                     setAmountVal(parseInt(event.target.value, 10));
                   }}
@@ -104,11 +104,18 @@ export default function Buy() {
             ? items.map((item) => {
                 return (
                   <Row
-                    className="d-flex flex-row justify-content-between align-items-center py-2"
+                    className="d-flex justify-content-between align-items-center py-2"
                     key={item.id}
                   >
-                    <p>{item.description}</p>
-                    <p>{item.amount}</p>
+                    <Col md="5">
+                      <span>{item.description}</span>
+                    </Col>
+                    <Col>
+                      <div>
+                        <span>$</span>
+                        <span>{item.amount}</span>
+                      </div>
+                    </Col>
                     <Button
                       color="danger"
                       onClick={() => handleRemove(item.id)}

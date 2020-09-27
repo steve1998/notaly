@@ -13,3 +13,7 @@
 .buy {
   padding: 1.5em;
 }
+
+.input {
+  text-transform: uppercase;
+}
