@@ -20,7 +20,7 @@ export default function Buy() {
   const [amountVal, setAmountVal] = useState(0);
   const dispatch = useDispatch();
   const isAdd: boolean = useSelector(selectAdd);
-  const items: Array<ItemList> = useSelector(selectItems);
+  const items: Array<ItemList> | null = useSelector(selectItems);
   const totalAmount: number = useSelector(selectTotalAmount);
 
   useEffect(() => {
