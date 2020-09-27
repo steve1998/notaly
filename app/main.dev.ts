@@ -37,10 +37,6 @@ if (
   require('electron-debug')();
 }
 
-const storage = require('electron-json-storage');
-
-console.log(storage.getDataPath());
-
 const installExtensions = async () => {
   const installer = require('electron-devtools-installer');
   const forceDownload = !!process.env.UPGRADE_EXTENSIONS;
