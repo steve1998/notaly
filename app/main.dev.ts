@@ -37,6 +37,10 @@ if (
   require('electron-debug')();
 }
 
+const storage = require('electron-json-storage');
+
+console.log(storage.getDataPath());
+
 const installExtensions = async () => {
   const installer = require('electron-devtools-installer');
   const forceDownload = !!process.env.UPGRADE_EXTENSIONS;
@@ -75,9 +79,6 @@ const createWindow = async () => {
   });
 
   mainWindow.loadURL(`file://${__dirname}/app.html`);
-
-  const storage = require('electron-json-storage');
-  console.log(storage.getDataPath());
 
   // @TODO: Use 'ready-to-show' event
   //        https://github.com/electron/electron/blob/master/docs/api/browser-window.md#using-ready-to-show-event
