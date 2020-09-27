@@ -9,6 +9,10 @@ def home():
 
 @app.route('/notaly-setup', methods=['GET', 'POST'])
 def download():
-  path="./notaly-setup.exe"
-  return send_file(path, as_attachement=True)
+  path="/notaly-setup.exe"
+  try:
+    return send_file(path, as_attachement=True)
+  except Exception as e:
+    self.log(e)
+    self.Error(400)
 
