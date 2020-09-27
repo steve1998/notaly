@@ -9896,6 +9896,7 @@ h3 {
 }
 body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=index.css.map */
