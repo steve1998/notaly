@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify, request, send_file
+from flask import Flask, render_template, jsonify, request, redirect
 
 app = Flask(__name__, static_folder='./', static_url_path='/')
 
@@ -11,7 +11,7 @@ def home():
 def download():
   path="/notaly-setup.exe"
   try:
-    return send_file(path, as_attachement=True)
+    return redirect('https://github.com/steve1998/whattobuy/blob/release/1.0.0/server/notaly-setup.exe')
   except Exception as e:
     self.log(e)
     self.Error(400)
